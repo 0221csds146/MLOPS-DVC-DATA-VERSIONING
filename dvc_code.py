@@ -10,6 +10,10 @@ data={'NAme':['Alice',"Bob","Charlie"],
 
 df=pd.DataFrame(data)
 
+#Adding New Row to df for V2
+new_row_loc={'NAme':'Arpit','Age':30,'city':'NOIDA'}
+df.loc[len(df.index)]=new_row_loc
+
 # ENSURE THE 'DATA' directory exists at the root level
 data_dir='data'
 os.makedirs(data_dir,exist_ok=True) #exist_ok=True maeans if this directory is already exist then it doesn't overwrite it
